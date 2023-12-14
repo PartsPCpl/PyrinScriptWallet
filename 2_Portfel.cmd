@@ -1,12 +1,12 @@
 @echo off
-ECHO Karlsen wallet by PartsPC.pl
+ECHO Pyrin wallet by PartsPC.pl
 ECHO Start!
-start /min cmd.exe /c "karlsend.exe --utxoindex & pause"
+start /min cmd.exe /c "pyipad.exe --utxoindex & pause"
 timeout 15 > NUL
 ECHO Uruchomiono synchronizacje
 ECHO XXXXXXXXXXXXXXXXXXXXXXXXX
 ECHO Uruchomienie daemona
-start /min cmd.exe /c "karlsenwallet.exe start-daemon & pause"
+start /min cmd.exe /c "pyrinwallet.exe start-daemon & pause"
 timeout 15 > NUL
 ECHO Portfel uruchomiony
 ECHO Czekamy na synchronizacje

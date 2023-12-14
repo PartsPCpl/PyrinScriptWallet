@@ -1,6 +1,6 @@
 @echo off
-ECHO Karlsen wallet by PartsPC.pl
+ECHO Pyrin wallet by PartsPC.pl
 ECHO Stan portfela
-karlsenwallet.exe balance
+pyrinwallet.exe balance
 
 PAUSE

@@ -1,22 +1,22 @@
 @echo off
-ECHO Karlsen wallet by PartsPC.pl
+ECHO Pyrin wallet by PartsPC.pl
 ECHO Start!
-start /min cmd.exe /c "karlsend.exe --utxoindex"
+start /min cmd.exe /c "pyipad.exe --utxoindex"
 timeout 15 > NUL
 ECHO XXXXXXXXXXXXXXXXXXXXXXXXX
 ECHO Ustawienia
-karlsenwallet.exe create 
+pyrinwallet.exe create 
 ECHO XXXXXXXXXXXXXXXXXXXXXXXXX
 ECHO Uruchomienie 
-start /min cmd.exe /c "karlsenwallet.exe start-daemon"
+start /min cmd.exe /c "pyrinwallet.exe start-daemon"
 timeout 15 > NUL
 ECHO XXXXXXXXXXXXXXXXXXXXXXXXX
-karlsenwallet.exe dump-unencrypted-data
+pyrinwallet.exe dump-unencrypted-data
 ECHO XXXXXXXXXXXXXXXXXXXXXXXXX
-karlsenwallet.exe new-address
+pyrinwallet.exe new-address
 ECHO Skopiuj i zapisz swoje frazy oraz adres portfela
-Taskkill /IM karlsend.exe /F > NUL
-Taskkill /IM karlsenwallet.exe /F > NUL
+Taskkill /IM pyipad.exe /F > NUL
+Taskkill /IM pyrinwallet.exe /F > NUL
 pause
 explorer "https://PartsPC.pl"
 pause
